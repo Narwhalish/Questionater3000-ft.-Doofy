@@ -1,4 +1,4 @@
-The polarity of water molecules plays an important role in the formationof solutions of ionic compounds in water.
+The polarity of water molecules plays an important role in the formation of solutions of ionic compounds in water.
 The slightly charged parts of water molecules attract the ions in the ionic compounds and surround them to keep them separated from the other ions in the solution.
 Suppose we drop a few crystals of lithium chloride into a beaker of water.
 At the crystal surface, water molecules come into contact with Li+ and Cl- ions.
@@ -6,10 +6,12 @@ The positive ends of the water molecules are attracted to Cl- ions, while the ne
 The attraction between water molecules and the ions is strong enough to draw the ions away from the crystal surface and into solution, as illustrated in Figure 2.5.
 This solution process with water as the solvent is referred to as hydration.
 The ions are said to be hydrated. As hydrated ions diffuse into the solu-tion, other ions are exposed and drawn away from the crystal surface by the solvent. The entire crystal gradually dissolves, and hydrated ions become uniformly distributed in the solution.
-When crystallized from aqueous solutions, some ionic substances form crystals that incorporate water molecules. These crystalline com-pounds, known as hydrates, retain specific ratios of water molecules, as shown in figure Figure 2.6, and are represented by formulas such as CuSO4 • 5H2O.
+When crystallized from aqueous solutions, some ionic substances form crystals that incorporate water molecules.
+These crystalline com-pounds, known as hydrates, retain specific ratios of water molecules, as shown in figure Figure 2.6, and are represented by formulas such as CuSO4 • 5H2O.
 Heating the crystals of a hydrate can drive off the water of hydration and leave the anhydrous salt.
 When a crystalline hydrate dissolves in water, the water of hydration returns to the solvent.
-The behavior of a solution made from a hydrate is no different from the behavior of one made from the anhydrous form. Dissolving either results in a system containing hydrated ions and water.
+The behavior of a solution made from a hydrate is no different from the behavior of one made from the anhydrous form.
+Dissolving either results in a system containing hydrated ions and water.
 Nonpolar Solvents
 Ionic compounds are generally not soluble in nonpolar solvents such as carbon tetrachloride, CCl4, and toluene, C6H5CH3.
 The nonpolar solvent molecules do not attract the ions of the crystal strongly enough to overcome the forces holding the crystal together.
