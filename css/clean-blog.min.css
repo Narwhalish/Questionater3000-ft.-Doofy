@@ -15,7 +15,8 @@ p a {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: E9E9E9 !important;
 }
 
 a {
@@ -38,6 +39,17 @@ blockquote {
   font-size: 36px;
   font-weight: 700;
   margin-top: 60px
+}
+
+.container {
+  background-color: E9E9E9;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: -24px;
+  border: 0;
+  border-top: 2px solid #E9E9E9;
 }
 
 .caption {
@@ -77,12 +89,12 @@ img::-moz-selection {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
   background-color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
   font-weight: 800;
-  color: #343a40
+  color: #E9E9E9;
 }
 
 #mainNav .navbar-toggler {
@@ -97,7 +109,7 @@ img::-moz-selection {
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width:992px) {
@@ -166,7 +178,7 @@ img::-moz-selection {
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
-  background-color: #868e96;
+  background-color: #E9E9E9;
   background-attachment: scroll;
   position: relative;
   -webkit-background-size: cover;
@@ -181,13 +193,13 @@ header.masthead .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #212529;
+  background-color: #000;
   opacity: .5
 }
 
 header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading {
-  padding: 200px 0 150px;
-  color: #fff
+  padding: 100px 0 75px;
+  color: #E9E9E9
 }
 
 @media only screen and (min-width:768px) {
@@ -201,7 +213,7 @@ header.masthead .page-heading, header.masthead .site-heading {
 }
 
 header.masthead .page-heading h1, header.masthead .site-heading h1 {
-  font-size: 50px;
+  font-size: 5S0px;
   margin-top: 0
 }
 
@@ -216,7 +228,7 @@ header.masthead .page-heading .subheading, header.masthead .site-heading .subhea
 
 @media only screen and (min-width:768px) {
   header.masthead .page-heading h1, header.masthead .site-heading h1 {
-    font-size: 80px
+    font-size: 70px
   }
 }
 
@@ -360,7 +372,7 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 footer {
-  padding: 50px 0 65px
+  padding: 20px
 }
 
 footer .list-inline {
@@ -385,14 +397,14 @@ footer .copyright {
 }
 
 .btn-primary {
-  background-color: #0085a1;
-  border-color: #0085a1
+  background-color: #99D3DF;
+  border-color: #99D3DF
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   color: #fff;
-  background-color: #00657b !important;
-  border-color: #00657b !important
+  background-color: #88BBD6 !important;
+  border-color: #88BBD6 !important
 }
 
 .btn-lg {
