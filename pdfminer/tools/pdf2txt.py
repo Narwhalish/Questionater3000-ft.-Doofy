@@ -81,27 +81,29 @@ def translate(output, args):
     return
 
 if __name__ == '__main__':
-    translate('chem2.txt', 'pdfminer/tools/samples/chem3.pdf')
-    f = open('cse.txt', 'r')
+    translate('captain.txt', 'pdfminer/tools/samples/1-Demo.pdf')
+    f = open('captain.txt', 'r')
     contents = f.readlines()
     f.close()
     new = ''
     i = 0
     for line in contents:
-        if len(line) > 10:
-            blank = False
-            if (i < len(contents)-1):
-                lastchar=" "
-                for num in range(len(line)-1, -1, -1):
-                    lastchar=line[num]
-                    if lastchar != "\n" and lastchar != " ":
-                        break
-                        
-                if (contents[i+1].strip("\n") == "" and lastchar != "."):
-                    blank = True
+        blank = False
+        if (i < len(contents)-1):
+            lastchar=" "
+            for num in range(len(line)-1, -1, -1):
+                lastchar=line[num]
+                if lastchar != "\n" and lastchar != " ":
+                    break
                     
-            if (not blank):
+            if (contents[i+1].strip("\n") == "" and lastchar != "." and lastchar != "!"):
+                blank = True
+                
+        if (not blank):
+            if (lastchar == "."  or lastchar == "!"):
                 new += line
+            elif (len(line) > 10):
+                new += line                    
         i+=1
     new = new.replace('\n', ' ')
     new = new[:-1];
@@ -109,7 +111,8 @@ if __name__ == '__main__':
     contents = ''
     for n in new:
         if (n[-2] != "?"):
+            n = n.strip(" ")
             contents += n + '\n'
-    t = open('cse-out.txt', 'w')
+    t = open('captain-out.txt', 'w')
     t.write(contents)
     t.close()
