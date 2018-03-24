@@ -77,10 +77,9 @@ def translate(output, args):
     fp.close()
     device.close()
     outfp.close()
-    return
 
 if __name__ == '__main__':
-    translate('output.txt', '..\\samples\\chem.pdf')
+    translate('output.txt', 'samples/chem.pdf')
     f = open('output.txt', 'r')
     contents = f.readlines()
     f.close()
