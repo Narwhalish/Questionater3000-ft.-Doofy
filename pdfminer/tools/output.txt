@@ -1,68 +1,16 @@
-Pause at line 62. Woolf
-speculates that Judith didn’t
-want to hurt her father, but
-that a powerful reason
-caused her to leave home.
-State the reason in your 
-own words.
-
-Woolf imagines that Shake-
-speare’s sister met a tragic
-fate after she went up to
-London to seek her fortune
-(lines 76–83). Underline what
-happened to her.
-
-50
-
-60
-
-70
-
-80
-
-have spoken sharply but kindly, for they were substantial people
-who knew the conditions of life for a woman and loved their
-daughter—indeed, more likely than not she was the apple of
-her father’s eye. Perhaps she scribbled some pages up in an apple
-loft on the sly, but was careful to hide them or set fire to them.
-Soon, however, before she was out of her teens, she was to be
-betrothed to the son of a neighboring wool stapler.2 She cried
-out that marriage was hateful to her, and for that she was severely
-beaten by her father. Then he ceased to scold her. He begged her
-instead not to hurt him, not to shame him in this matter of her
-marriage. He would give her a chain of beads or a fine petticoat,
-he said; and there were tears in his eyes. How could she disobey
-him? How could she break his heart? The force of her own gift
-alone drove her to it. She made up a small parcel of her belong-
-ings, let herself down by a rope one summer’s night, and took
-the road to London. She was not seventeen. The birds that sang
-in the hedge were not more musical than she was. She had the
-quickest fancy, a gift like her brother’s, for the tune of words.
-Like him, she had a taste for the theater. She stood at the stage
-door; she wanted to act, she said. Men laughed in her face. The
-manager—a fat, loose-lipped man—guffawed. He bellowed
-something about poodles dancing and women acting—no
-woman, he said, could possibly be an actress. He hinted—you
-can imagine what. She could get no training in her craft. Could
-she even seek her dinner in a tavern or roam the streets at mid-
-night? Yet her genius was for fiction and lusted to feed abun-
-dantly upon the lives of men and women and the study of their
-ways. At last—for she was very young, oddly like Shakespeare
-the poet in her face, with the same gray eyes and rounded
-brows—at last Nick Greene the actor-manager took pity on her;
-she found herself with child by that gentleman and so—who
-shall measure the heat and violence of the poet’s heart when
-caught and tangled in a woman’s body?—killed herself one
-
-2. wool stapler: dealer in wool, a product sorted according to its fiber,
-
-or “staple.”
-
-272
-
-Part 1
-
-Chapter 7: The Modern World
-
-
+A helium nucleus has a mass that is 0.7% less than that of four hydrogen nuclei; this lost mass is converted into energy during the fusion.
+This reaction produces about 3.6 × 1011 kJ of energy per mole of 2 somewhat larger than the energy produced by the nuclear fission of one mole of U-235 (1.8 × 1010 kJ), and over 3 million times larger than the energy produced by the (chemical) combustion of one mole of octane (5471 kJ).
+It has been determined that the nuclei of the heavy isotopes of hydrogen, a deuteron, 1 fusion at extremely high temperatures (thermonuclear fusion).
+They form a helium nucleus and a neutron: This change proceeds with a mass loss of 0.0188 amu, corresponding to the release of 1.69 × 109 kilojoules per mole 4 He formed.
+The very high temperature is necessary to give the nuclei enough kinetic energy to overcome the very strong repulsive forces resulting from the positive charges on their nuclei so they can collide.
+Useful fusion reactions require very high temperatures for their initiation—about 15,000,000 K or more.
+At these temperatures, all molecules dissociate into atoms, and the atoms ionize, forming plasma.
+These conditions occur in an extremely large number of locations throughout the universe—stars are powered by fusion.
+Humans have already figured out how to create temperatures high enough to achieve fusion on a large scale in thermonuclear weapons.
+A thermonuclear weapon such as a hydrogen bomb contains a nuclear fission bomb that, when exploded, gives off enough energy to produce the extremely high temperatures necessary for fusion to occur.
+Another much more beneficial way to create fusion reactions is in a fusion reactor, a nuclear reactor in which fusion reactions of light nuclei are controlled.
+Because no solid materials are stable at such high temperatures, mechanical devices cannot contain the plasma in which fusion reactions occur.
+Two techniques to contain plasma at the density and temperature necessary for a fusion reaction are currently the focus of intensive research efforts: containment by a magnetic field and by the use of focused laser beams (Figure 21.23).
+A number of large projects are working to attain one of the biggest goals in science: getting hydrogen fuel to ignite and produce more energy than the amount supplied to achieve the extremely high temperatures and pressures that are required for fusion.
+At the time of this writing, there are no self-sustaining fusion reactors operating in the world, although small-scale controlled fusion reactions have been run for very brief periods.
+This content is available for free at https://cnx.org/content/col11760/1.9 .

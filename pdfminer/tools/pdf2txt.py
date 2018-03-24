@@ -80,4 +80,18 @@ def translate(output, args):
     return
 
 if __name__ == '__main__':
-    translate('output.txt','..\\samples\\test.pdf')
+    translate('output.txt', '..\\samples\\chem.pdf')
+    f = open('output.txt', 'r')
+    contents = f.readlines()
+    f.close()
+    new = ''
+    for line in contents:
+        if len(line) > 35:
+            new += line
+    new = [e+'.' for e in new.replace('\n', ' ').split('. ') if e]
+    contents = ''
+    for n in new:
+        contents += n + '\n'
+    t = open('output.txt', 'w')
+    t.write(contents)
+    t.close()
