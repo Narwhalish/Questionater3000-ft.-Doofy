@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import sys
+import re
 from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
@@ -77,20 +78,38 @@ def translate(output, args):
     fp.close()
     device.close()
     outfp.close()
+    return
 
 if __name__ == '__main__':
-    translate('output.txt', 'samples/chem.pdf')
-    f = open('output.txt', 'r')
+    translate('chem2.txt', 'pdfminer/tools/samples/chem3.pdf')
+    f = open('cse.txt', 'r')
     contents = f.readlines()
     f.close()
     new = ''
+    i = 0
     for line in contents:
-        if len(line) > 35:
-            new += line
-    new = [e+'.' for e in new.replace('\n', ' ').split('. ') if e]
+        if len(line) > 10:
+            blank = False
+            if (i < len(contents)-1):
+                lastchar=" "
+                for num in range(len(line)-1, -1, -1):
+                    lastchar=line[num]
+                    if lastchar != "\n" and lastchar != " ":
+                        break
+                        
+                if (contents[i+1].strip("\n") == "" and lastchar != "."):
+                    blank = True
+                    
+            if (not blank):
+                new += line
+        i+=1
+    new = new.replace('\n', ' ')
+    new = new[:-1];
+    new = [e+'.' for e in re.split("!\s|\.\s", new) if e]
     contents = ''
     for n in new:
-        contents += n + '\n'
-    t = open('output.txt', 'w')
+        if (n[-2] != "?"):
+            contents += n + '\n'
+    t = open('cse-out.txt', 'w')
     t.write(contents)
     t.close()
