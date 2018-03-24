@@ -68,11 +68,15 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <p style="text-align: center;">Begin by uploading a PDF file!</p>
-          <form method="post" enctype="multipart/form-data" class="mx-auto">
+        </div>
+        <form method="post" enctype="multipart/form-data" class="mx-auto" style="text-align: center;">
+          <div class="form-row">
             <label class="btn btn-default">
-                Choose File<input type="file" id="input_file" accept=".pdf" hidden>
+                <input type="file" id="input_file" accept=".pdf">
             </label>
-          </form>
+          </div>
+          <button>Upload</button>
+        </form>
         </div>
         <form>
 
