@@ -82,7 +82,7 @@ def translate(output, args):
 
 if __name__ == '__main__':
     translate('chem2.txt', 'pdfminer/tools/samples/chem3.pdf')
-    f = open('chem2.txt', 'r')
+    f = open('cse.txt', 'r')
     contents = f.readlines()
     f.close()
     new = ''
@@ -96,18 +96,9 @@ if __name__ == '__main__':
                     lastchar=line[num]
                     if lastchar != "\n" and lastchar != " ":
                         break
-                for num in range(i+1, len(line)):
-                    lastchar2 = " "
-                    for num2 in range(len(contents[num])-1, -1, -1):
-                        lastchar2 =contents[num][num2]
-                        if lastchar2 != "\n" and lastchar2 != " ":
-                            break
-                    if (contents[num].strip("\n") == "" and lastchar != "."):
-                        blank = True
-                        break
-                    elif (lastchar2 == "."):
-                        break
-                    
+                        
+                if (contents[i+1].strip("\n") == "" and lastchar != "."):
+                    blank = True
                     
             if (not blank):
                 new += line
@@ -119,6 +110,6 @@ if __name__ == '__main__':
     for n in new:
         if (n[-2] != "?"):
             contents += n + '\n'
-    t = open('chem2-out.txt', 'w')
+    t = open('cse-out.txt', 'w')
     t.write(contents)
     t.close()
