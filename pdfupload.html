@@ -66,9 +66,16 @@
     <!-- Main Content -->
     <div class="container">
       <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p style="text-align: center;">Begin by uploading a PDF file!</p>
+          <form method="post" enctype="multipart/form-data" class="mx-auto">
+            <label class="btn btn-default">
+                Choose File<input type="file" id="input_file" accept=".pdf" hidden>
+            </label>
+          </form>
+        </div>
         <form>
-          Enter Text Below:<br>
-          <input type="text" name="textinput" style = "word-break: break-word;"
+
         </form>
       </div>
     </div>
