@@ -1,30 +1,23 @@
-O Captain.
-My Captain.
-O Captain.
-My Captain.
-Our fearful trip is done.
-The ship has weathered every rack, the prize we sought is won.
-The port is near, the bells I hear, the people all exulting.
-While follow eyes the steady keel, the vessel grim and daring.
-But O heart.
-Heart.
-Heart.
-O the bleeding drops of red.
-Where on the deck my captain lies, fallen cold and dead.
-O Captain.
-My Captain.
-Rise up and hear the bells.
-Rise up for you the flag is flung, for you the bugle trills.
-For you the bouquets and wreaths, for you the shores a-crowding.
-For you they call, the swaying mass, their eager faces turning.
-O Captain.
-Dear father.
-This arm beneath your head.
-It is some dream that on the deck, youâ€™ve fallen cold and dead.
-My captain does not answer, his lips are pale and still.
-My father does not feel my arm; he has no pulse nor will.
-The ship is safe and sound, its voyage closed and done.
-From fearful trip the victor ship comes in with object won.
-Exult, O shores.
-And ring, O bells.
-But I, with silent tread, walk the spot my captain lies, fallen cold and dead.
+Lines 73 – 78 demonstrate some statements new to you.
+This is a try–except structure, which is the Python exception handler.
+An exception handler lists the code to be executed if an error occurs.
+The PIL.Image.open(filename) function can cause an error that would halt the program if the filename does not specify an image file.
+Specifically, open()reports an IOError type of error.
+If that error is reported to the Python interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
+The traceback shows what lines of code caused the error.
+By using a try–except structure, such an error is caught instead of halting the program.
+An error that has been caught doesn’t get reported  back to the Python interpreter.
+The handler can opt to keep the error invisible to the user and keep the program running.
+That’s a good thing if the programmer expected the error and wants the program to keep running.
+That can be a bad thing if the code accidentally catches other exceptions, like the user trying to quit the program.
+So the program should only catch the specific class of errors that are expected, such as IOError in this case.
+Here is how the try–except structure controls the program flow.
+The statements in the try block are executed one at a time.
+If one of those statements causes an error, the interpreter checks to see if the type of error matches the type of errors listed in the except statement.
+If the error type matches the except statement, then the interpreter does not execute the rest of the try block and instead continues execution with the except block of code.
+If the error doesn’t match the except statement, then the error is not caught and the program will be halted.
+In this code the except block only contains the Python pass statement, which does nothing.
+It is used when Python syntax requires a statement but no action is required.
+So the except block catches the error but doesn’t do anything with it.
+If the try block of code is executed without any errors, the except block of code is skipped.
+Execution continues after the try–except structure.

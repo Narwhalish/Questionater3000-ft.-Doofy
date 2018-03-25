@@ -45,7 +45,7 @@ words = ['less', 'more', 'least', 'most',
          'positive', 'negative', 'can', 'cannot', 'all', 'some', 'true', 'false',  
          'equal', 'unequal', 'best', 'worst', 'bad', 'good', 'with', 'without']
 
-text = open('input.txt', 'r')
+text = open('questionGenerators/input.txt', 'r')
 questions = []
 answers = []
 right_answer = []
@@ -101,6 +101,7 @@ if len(lsv1) >= 5:
 else:
     final = random.sample(lsv1, len(lsv1))
     
+t = open('questionGenerators/tf_out.txt', 'w')
 for item in final:
-    for thing in item:
-        print(thing)    
+    t.write(item[0] + '\n' + str(item[1]) + '\n' + item[2] + '\n')
+t.close() 

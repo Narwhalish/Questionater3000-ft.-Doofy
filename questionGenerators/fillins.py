@@ -14,8 +14,8 @@ def read_text(filename):
 
 def replaceIC(word, sentence):
     if len(word) > 3:
-        insensitive_hippo = re.compile(re.escape(word), re.IGNORECASE)
-        return insensitive_hippo.sub('__________________', sentence)
+        var = re.compile(re.escape(word), re.IGNORECASE)
+        return var.sub('__________________', sentence)
     else:
         pass
 
@@ -34,7 +34,7 @@ def removeWord(sentence, poss):
     else:
         return (None, sentence, None)
 
-text = read_text('input.txt')
+text = read_text('questionGenerators/input.txt')
 text_blob = TextBlob(text)
 sposs = {}
 
@@ -61,8 +61,10 @@ if len(QandA) >= 5:
     final = random.sample(QandA, 5)
 else:
     final = random.sample(QandA, len(QandA))
-    
+  
+t = open('questionGenerators/fill_out.txt', 'w')
 for item in final:
-    for thing in item:
-        print(thing)  
+    t.write(item[0] + '\n' + item[1] + '\n')
+t.close()
+          
         

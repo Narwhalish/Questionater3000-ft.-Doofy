@@ -1,0 +1,15 @@
+If that error is not reported to the Python interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
+False
+If that error is reported to the Python interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
+If the try block of code is executed without any errors, the except block of code is skipped.
+True
+
+It is not used when Python syntax requires a statement but no action is required.
+False
+It is used when Python syntax requires a statement but no action is required.
+So the program should only catch the specific class of errors that are expected, such as IOError in this case.
+True
+
+By using a try–except structure, such an error is not caught instead of halting the program.
+False
+By using a try–except structure, such an error is caught instead of halting the program.
