@@ -82,15 +82,15 @@ def translate(output, args):
 
 if __name__ == '__main__':
     translate('captain.txt', 'pdfminer/tools/samples/1-Demo.pdf')
-    f = open('cse2.txt', 'r')
+    f = open('captain.txt', 'r')
     contents = f.readlines()
     f.close()
     new = ''
     i = 0
     for line in contents:
         blank = False
+        lastchar=" "
         if (i < len(contents)-1):
-            lastchar=" "
             for num in range(len(line)-1, -1, -1):
                 lastchar=line[num]
                 if lastchar != "\n" and lastchar != " ":
@@ -113,6 +113,6 @@ if __name__ == '__main__':
         if (n[-2] != "?"):
             n = n.strip(" ")
             contents += n + '\n'
-    t = open('cse2-out.txt', 'w')
+    t = open('questionGenerators/input.txt', 'w')
     t.write(contents)
     t.close()
