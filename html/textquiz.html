@@ -69,7 +69,8 @@
       <div class="form-group"></div>
     </div>
     <div class="container">
-      <form id="answerForm" class="pure-form pure-form-stacked" method="post">
+      <script src="../js/getanswers.js"></script>
+      <form id="answerForm" class="pure-form pure-form-stacked">
         <div class="row">
           <form method="post" role="form">
             <div class="form-row">
@@ -112,7 +113,7 @@
                 <p id='tf1' class='question'></p>
                 <p id='atf1' class='answer'></p>
               </div>
-              <select name="true-false-menus" id="true-false" class="form-group col-4">
+              <select name="true-false-menus" id="true-false" class="custom-select form-group col-4">
                 <option selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
@@ -121,7 +122,7 @@
                 <p id='tf2' class='question'></p>
                 <p id='atf2' class='answer'></p>
               </div>
-              <select name="true-false-menus" id="true-false" class="form-group col-4">
+              <select name="true-false-menus" id="true-false" class="custom-select form-group col-4">
                 <option selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
@@ -130,7 +131,7 @@
                 <p id='tf3' class='question'></p>
                 <p id='atf3' class='answer'></p>
               </div>
-              <select name="true-false-menus" id="true-false" class="form-group col-4">
+              <select name="true-false-menus" id="true-false" class="custom-select form-group col-4">
                 <option selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
@@ -139,7 +140,7 @@
                 <p id='tf4' class='question'></p>
                 <p id='atf4' class='answer'></p>
               </div>
-              <select name="true-false-menus" id="true-false" class="form-group col-4">
+              <select name="true-false-menus" id="true-false" class="custom-select form-group col-4">
                 <option selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
@@ -148,14 +149,14 @@
                 <p id='tf5' class='question'></p>
                 <p id='atf5' class='answer'></p>
               </div>
-              <select name="true-false-menus" id="true-false" class="form-group col-4">
+              <select name="true-false-menus" id="true-false" class="custom-select form-group col-4">
                 <option selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
               </select>
             </div>
             <div class="form-row mx-auto">
-              <button class="btn btn-primary btn-modify mx-auto" onclick="revealAns()">Check Answers</button>
+              <input type="submit" value="Check Answers" class="btn btn-primary btn-modify mx-auto">
             </div>
           </form>
         </div>
