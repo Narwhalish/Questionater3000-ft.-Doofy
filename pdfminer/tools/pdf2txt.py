@@ -89,8 +89,8 @@ if __name__ == '__main__':
     i = 0
     for line in contents:
         blank = False
+        lastchar=" "
         if (i < len(contents)-1):
-            lastchar=" "
             for num in range(len(line)-1, -1, -1):
                 lastchar=line[num]
                 if lastchar != "\n" and lastchar != " ":
@@ -113,6 +113,6 @@ if __name__ == '__main__':
         if (n[-2] != "?"):
             n = n.strip(" ")
             contents += n + '\n'
-    t = open('captain-out.txt', 'w')
+    t = open('questionGenerators/input.txt', 'w')
     t.write(contents)
     t.close()
