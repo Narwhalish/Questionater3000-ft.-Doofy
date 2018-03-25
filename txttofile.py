@@ -42,7 +42,7 @@ new = new[:-1];
 new = [e+'.' for e in re.split("!\s|\.\s", new) if e]
 contents = ''
 for n in new:
-    if (n[-2] != "?"):
+    if (n[-2] != "?" and "HTTP/1.1" not in n):
         n = n.strip(" ")
         contents += n + '\n'
 t = open('questionGenerators/input.txt', 'w')
