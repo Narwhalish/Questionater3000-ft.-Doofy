@@ -2,3 +2,7 @@
   height: 100px;
   margin-top: 10px;
 }
+
+.answer {
+  font-weight: bold;
+}

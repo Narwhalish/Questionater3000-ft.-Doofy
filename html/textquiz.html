@@ -69,51 +69,50 @@
       <div class="form-group"></div>
     </div>
     <div class="container">
-      <script src="../js/getanswers.js"></script>
-      <form id="answerForm" class="pure-form pure-form-stacked">
+      <form action="javascript:revealAns()" id="answerForm" class="pure-form pure-form-stacked">
         <div class="row">
-          <form method="post" role="form">
+          <form role="form">
             <div class="form-row">
               <div class="form-group col-8">
                 <p id='fill1' class='question'></p>
                 <p id='afill1' class='answer'></p>
               </div>
               <div class="form-group col-4">
-                <input type="text" id="ans1" class="form-control" placeholder="Answer">
+                <input type="text" id="fillans1" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
                 <p id='fill2' class='question'></p>
                 <p id='afill2' class='answer'></p>
               </div>
               <div class="form-group col-4">
-                <input type="text" id="ans2" class="form-control" placeholder="Answer">
+                <input type="text" id="fillans2" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
                 <p id='fill3' class='question'></p>
                 <p id='afill3' class='answer'></p>
               </div>
               <div class="form-group col-4">
-                <input type="text" id="ans3" class="form-control" placeholder="Answer">
+                <input type="text" id="fillans3" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
                 <p id='fill4' class='question'></p>
                 <p id='afill4' class='answer'></p>
               </div>
               <div class="form-group col-4">
-                <input type="text" id="ans4" class="form-control" placeholder="Answer">
+                <input type="text" id="fillans4" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
                 <p id='fill5' class='question'></p>
                 <p id='afill5' class='answer'></p>
               </div>
               <div class="form-group col-4">
-                <input type="text" id="ans5" class="form-control" placeholder="Answer">
+                <input type="text" id="fillans5" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
                 <p id='tf1' class='question'></p>
                 <p id='atf1' class='answer'></p>
               </div>
-              <select name="true-false-menus" id="true-false1" class="custom-select form-group col-4">
+              <select id="tfans1" class="custom-select form-group col-4">
                 <option selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
@@ -122,7 +121,7 @@
                 <p id='tf2' class='question'></p>
                 <p id='atf2' class='answer'></p>
               </div>
-              <select name="true-false-menus" id="true-false2" class="custom-select form-group col-4">
+              <select id="tfans2" class="custom-select form-group col-4">
                 <option selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
@@ -131,7 +130,7 @@
                 <p id='tf3' class='question'></p>
                 <p id='atf3' class='answer'></p>
               </div>
-              <select name="true-false-menus" id="true-false3" class="custom-select form-group col-4">
+              <select id="tfans3" class="custom-select form-group col-4">
                 <option selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
@@ -140,7 +139,7 @@
                 <p id='tf4' class='question'></p>
                 <p id='atf4' class='answer'></p>
               </div>
-              <select name="true-false-menus" id="true-false4" class="custom-select form-group col-4">
+              <select id="tfans4" class="custom-select form-group col-4">
                 <option selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
@@ -149,14 +148,14 @@
                 <p id='tf5' class='question'></p>
                 <p id='atf5' class='answer'></p>
               </div>
-              <select name="true-false-menus" id="true-false5" class="custom-select form-group col-4">
+              <select id="tfans5" class="custom-select form-group col-4">
                 <option selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
               </select>
             </div>
             <div class="form-row mx-auto">
-              <input type="submit" value="Check Answers" class="btn btn-primary btn-modify mx-auto">
+              <input type="submit" value="Check Answers" class="btn btn-primary mx-auto">
             </div>
           </form>
         </div>
@@ -175,25 +174,25 @@
     <script>
       function revealAns() {
         console.log("jeff");
-        // $.get('../questionGenerators/fill_out.txt', function(data) {
-        //   var info = data.split('\n');
-        //   for (i=0; i<info.length;i++){
-        //     if (i%2 == 1)
-        //     {
-        //       var id = 'afill' + ((i-1)/2+1).toString();
-        //       document.getElementById(id).innerHTML = info[i];
-        //     }
-        //   }
-        // });
-        // $.get('../questionGenerators/tf_out.txt', function(data) {
-        //   var info = data.split('\n');
-        //   for (i=0; i<info.length;i++){
-        //     if (i%2==1) {
-        //       var id = 'atf' + ((i-1)/2+1).toString();
-        //       document.getElementById(id).innerHTML = info[i];
-        //     }
-        //   }
-        // });
+        $.get('../questionGenerators/fill_out.txt', function(data) {
+          var info = data.split('\n');
+          for (i=0; i<info.length;i++){
+            if (i%2 == 1)
+            {
+              var id = 'afill' + ((i-1)/2+1).toString();
+              document.getElementById(id).innerHTML = info[i];
+            }
+          }
+        });
+        $.get('../questionGenerators/tf_out.txt', function(data) {
+          var info = data.split('\n');
+          for (i=0; i<info.length;i++){
+            if (i%2==1) {
+              var id = 'atf' + ((i-1)/2+1).toString();
+              document.getElementById(id).innerHTML = info[i];
+            }
+          }
+        });
       }
       $.get('../questionGenerators/fill_out.txt', function(data) {
         var info = data.split('\n');
