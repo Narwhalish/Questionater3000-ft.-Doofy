@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -13,6 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Custom fonts for this template -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -74,37 +74,37 @@
           <form method="post" role="form">
             <div class="form-row">
               <div class="form-group col-8">
-                Sample text for question 1.
+                <p id='fill1' class='question'></p>
               </div>
               <div class="form-group col-4">
                 <input type="text" id="ans1" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
-                Sample text for question 2.
+                <p id='fill2' class='question'></p>
               </div>
               <div class="form-group col-4">
                 <input type="text" id="ans2" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
-                Sample text for question 3.
+                <p id='fill3' class='question'></p>
               </div>
               <div class="form-group col-4">
                 <input type="text" id="ans3" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
-                Sample text for question 4.
+                <p id='fill4' class='question'></p>
               </div>
               <div class="form-group col-4">
                 <input type="text" id="ans4" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
-                Sample text for question 5.
+                <p id='fill5' class='question'></p>
               </div>
               <div class="form-group col-4">
                 <input type="text" id="ans5" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
-                Sample text for true/false 1.
+                <p id='tf1' class='question'></p>
               </div>
               <select name="true-false-menus" id="true-false" class="form-group col-4">
                 <option selected>Pick True/False</option>
@@ -112,7 +112,7 @@
                 <option value="False">False</option>
               </select>
               <div class="form-group col-8">
-                Sample text for true/false 2.
+                <p id='tf2' class='question'></p>
               </div>
               <select name="true-false-menus" id="true-false" class="form-group col-4">
                 <option selected>Pick True/False</option>
@@ -120,7 +120,7 @@
                 <option value="False">False</option>
               </select>
               <div class="form-group col-8">
-                Sample text for true/false 3.
+                <p id='tf3' class='question'></p>
               </div>
               <select name="true-false-menus" id="true-false" class="form-group col-4">
                 <option selected>Pick True/False</option>
@@ -128,7 +128,7 @@
                 <option value="False">False</option>
               </select>
               <div class="form-group col-8">
-                Sample text for true/false 4.
+                <p id='tf4' class='question'></p>
               </div>
               <select name="true-false-menus" id="true-false" class="form-group col-4">
                 <option selected>Pick True/False</option>
@@ -136,7 +136,7 @@
                 <option value="False">False</option>
               </select>
               <div class="form-group col-8">
-                Sample text for true/false 5.
+                <p id='tf5' class='question'></p>
               </div>
               <select name="true-false-menus" id="true-false" class="form-group col-4">
                 <option selected>Pick True/False</option>
@@ -161,6 +161,26 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
+    <script>
+      $.get('../questionGenerators/fill_out.txt', function(data) {
+        var info = data.split('\n');
+        for (i=0; i<info.length;i++){
+          if (i%2==0) {
+            var id = 'fill' + (i/2+1).toString();
+            document.getElementById(id).innerHTML = info[i];
+          }
+        }
+      });
+      $.get('../questionGenerators/tf_out.txt', function(data) {
+        var info = data.split('\n');
+        for (i=0; i<info.length;i++){
+          if (i%3==0) {
+            var id = 'tf' + (i/3+1).toString();
+            document.getElementById(id).innerHTML = info[i];
+          }
+        }
+      });
+    </script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom scripts for this template -->

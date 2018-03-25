@@ -1,10 +1,10 @@
-If the error type matches the except statement, then the interpreter does not execute the rest of the try __________________ and instead continues execution with the except __________________ of code.
-block
-If one of those statements causes an __________________, the interpreter checks to see if the type of __________________ matches the type of __________________s listed in the except statement.
-error
-__________________ continues after the try–except structure.
-Execution
-An error that has been caught doesn’t get reported  back to the __________________ interpreter.
+In this code the except block only contains the __________________ pass statement, which does nothing.
 Python
-The __________________ shows what lines of code caused the error.
-traceback
+The __________________(filename) function can cause an error that would halt the program if the filename does not specify an image file.
+PIL.Image.open
+If the try block of __________________ is executed without any errors, the except block of __________________ is skipped.
+code
+An exception handler lists the __________________ to be executed if an error occurs.
+code
+That’s a good thing if the __________________ expected the error and wants the program to keep running.
+programmer

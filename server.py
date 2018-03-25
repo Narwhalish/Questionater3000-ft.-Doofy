@@ -18,13 +18,16 @@ filesToSend = {
     b"js/gulpfile.js":b"js",
     b"js/jqBootstrapValidation.js":b"js",
     b"js/jqBootstrapValidation.min.js":b"js",
+    b"js/questions.js":b"js",
     b"vendor/jquery/jquery.js":b"js",
     b"vendor/jquery/jquery.min.js":b"js",
     b"vendor/jquery/jquery.slim.js":b"js",
     b"vendor/jquery/jquery.slim.min.js":b"js",
     b"vendor/bootstrap/js/bootstrap.bundle.min.js":b"js",
     b"img/favicon-32x32.png":b"png",
-    b"img/logo.PNG":b"png"
+    b"img/logo.PNG":b"png",
+    b"questionGenerators/fill_out.txt":b"txt",
+    b"questionGenerators/tf_out.txt":b"txt",
 }
 
 defaultFile = [b"html/textupload.html",b"html"]

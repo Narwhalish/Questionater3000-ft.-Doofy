@@ -1,15 +1,15 @@
-If that error is not reported to the Python interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
+If the error type matches the except statement, then the interpreter does execute the rest of the try block and instead continues execution with the except block of code.
 False
-If that error is reported to the Python interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
-If the try block of code is executed without any errors, the except block of code is skipped.
-True
-
-It is not used when Python syntax requires a statement but no action is required.
+If the error type matches the except statement, then the interpreter does not execute the rest of the try block and instead continues execution with the except block of code.
+So the except block catches the error but doesn’t do not anything with it.
 False
-It is used when Python syntax requires a statement but no action is required.
-So the program should only catch the specific class of errors that are expected, such as IOError in this case.
-True
-
-By using a try–except structure, such an error is not caught instead of halting the program.
-False
+So the except block catches the error but doesn’t do anything with it.
 By using a try–except structure, such an error is caught instead of halting the program.
+True
+
+That cannot be a bad thing if the code accidentally catches other exceptions, like the user trying to quit the program.
+False
+That can be a bad thing if the code accidentally catches other exceptions, like the user trying to quit the program.
+The handler can opt to keep the error invisible to the user and keep the program running.
+True
+
