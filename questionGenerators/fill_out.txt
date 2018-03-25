@@ -1,10 +1,10 @@
-Lines 73 – 78 __________________ some statements new to you.
-demonstrate
-If that error is reported to the __________________ interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
-Python
-So the program should only catch the specific class of errors that are expected, such as __________________ in this case.
-IOError
-In this code the except block only contains the __________________ pass statement, which does nothing.
-Python
-If the try __________________ of code is executed without any errors, the except __________________ of code is skipped.
-block
+In 1944, the Western Allies invaded German-occupied France, while the __________________ Union regained all of its territorial losses and invaded Germany and its allies.
+Soviet
+Under the __________________ Pact of August 1939, Germany and the Soviet Union partitioned and annexed territories of their European neighbours, Poland, Finland, Romania and the Baltic states.
+Molotov–Ribbentrop
+The war in __________________ concluded with an invasion of Germany by the Western Allies and the Soviet Union, culminating in the capture of Berlin by Soviet troops, the suicide of Adolf Hitler and the subsequent German unconditional surrender on 8 May 1945.
+Europe
+In 1943, with a series of German defeats on the Eastern Front, the Allied invasion of Sicily and the Allied invasion of __________________ which brought about Italian surrender, and Allied victories in the Pacific, the Axis lost the initiative and undertook strategic retreat on all fronts.
+Italy
+The victorious great powers—China, France, the Soviet Union, the __________________ Kingdom, and the __________________ States—became the permanent members of the __________________ Nations Security Council.
+United
