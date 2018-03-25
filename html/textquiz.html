@@ -113,7 +113,7 @@
                 <p id='atf1' class='answer'></p>
               </div>
               <select id="tfans1" class="custom-select form-group col-4">
-                <option selected>Pick True/False</option>
+                <option class="drop" selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
               </select>
@@ -122,7 +122,7 @@
                 <p id='atf2' class='answer'></p>
               </div>
               <select id="tfans2" class="custom-select form-group col-4">
-                <option selected>Pick True/False</option>
+                <option class="drop" selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
               </select>
@@ -131,7 +131,7 @@
                 <p id='atf3' class='answer'></p>
               </div>
               <select id="tfans3" class="custom-select form-group col-4">
-                <option selected>Pick True/False</option>
+                <option class="drop" selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
               </select>
@@ -140,7 +140,7 @@
                 <p id='atf4' class='answer'></p>
               </div>
               <select id="tfans4" class="custom-select form-group col-4">
-                <option selected>Pick True/False</option>
+                <option class="drop" selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
               </select>
@@ -149,7 +149,7 @@
                 <p id='atf5' class='answer'></p>
               </div>
               <select id="tfans5" class="custom-select form-group col-4">
-                <option selected>Pick True/False</option>
+                <option class="drop" selected>Pick True/False</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
               </select>
@@ -173,22 +173,25 @@
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script>
       function revealAns() {
+        revealOther()
         console.log("jeff");
+        $.get('../questionGenerators/tf_out.txt', function(data) {
+          var info = data.split('\n');
+          for (i=0; i<info.length;i++){
+            if (i%2==1) {
+              var id = 'atf' + ((i-1)/2+1).toString();
+              document.getElementById(id).innerHTML = info[i];
+            }
+          }
+        });
+      }
+      function revealOther(){
         $.get('../questionGenerators/fill_out.txt', function(data) {
           var info = data.split('\n');
           for (i=0; i<info.length;i++){
             if (i%2 == 1)
             {
               var id = 'afill' + ((i-1)/2+1).toString();
-              document.getElementById(id).innerHTML = info[i];
-            }
-          }
-        });
-        $.get('../questionGenerators/tf_out.txt', function(data) {
-          var info = data.split('\n');
-          for (i=0; i<info.length;i++){
-            if (i%2==1) {
-              var id = 'atf' + ((i-1)/2+1).toString();
               document.getElementById(id).innerHTML = info[i];
             }
           }

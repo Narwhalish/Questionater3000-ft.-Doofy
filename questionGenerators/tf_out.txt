@@ -1,8 +1,10 @@
-World War II was not the deadliest conflict in human history, marked by 50 million to 85 million fatalities, most of which were civilians in the Soviet Union and China.
-False. World War II was the deadliest conflict in human history, marked by 50 million to 85 million fatalities, most of which were civilians in the Soviet Union and China.
-World War II (often abbreviated to WWII or WW2), also known as the Second World War, was a global war that lasted from 1939 to 1945, although related conflicts began earlier.
+If the error type matches the except statement, then the interpreter does not execute the rest of the try block and instead continues execution with the except block of code.
 True. 
-It involved the vast majority of the world's countries—including all of the great powers—eventually forming two opposing military alliances: the Allies and the Axis.
+By using a try–except structure, such an error is not caught instead of halting the program.
+False. By using a try–except structure, such an error is caught instead of halting the program.
+The statements in the try block are executed one at a time.
 True. 
-It was the most widespread war in history, and directly involved more than 100 million people from over 30 countries.
+So the program should only catch the specific class of errors that are expected, such as IOError in this case.
+True. 
+That’s a good thing if the programmer expected the error and wants the program to keep running.
 True. 

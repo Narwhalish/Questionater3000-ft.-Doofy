@@ -1,10 +1,10 @@
-World War II was the deadliest conflict in human history, marked by 50 million to 85 million fatalities, most of which were civilians in the Soviet __________________ and China.
-Union
-It involved the vast majority of the world's countries—including all of the great powers—eventually forming two opposing military alliances: the Allies and the __________________.
-Axis
-It included massacres, the deliberate genocide of the __________________, strategic bombing, starvation, disease and the first use of nuclear weapons in history.
-Holocaust
-__________________
-HTTP/1..
-It was the most widespread war in __________________, and directly involved more than 100 million people from over 30 countries.
-history
+So the program should only catch the specific class of errors that are expected, such as __________________ in this case.
+IOError
+This is a try–except structure, which is the __________________ exception handler.
+Python
+Specifically, open()reports an __________________ type of error.
+IOError
+Here is how the try–except structure controls the program __________________.
+flow
+The traceback shows what lines of __________________ caused the error.
+code

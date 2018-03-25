@@ -6,3 +6,7 @@
 .answer {
   font-weight: bold;
 }
+
+.custom-select.form-group.col-4 {
+  margin-top: 25px;
+}

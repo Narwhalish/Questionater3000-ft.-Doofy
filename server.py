@@ -102,7 +102,7 @@ def handler(conn):
 
     if not sentSomething:
         if data.find(b"textquiz.html") != -1:
-            pattern = re.compile(b'text=(.*)\r\n')
+            pattern = re.compile(b'text=(.*)\s')
             text = pattern.findall(data)[0]
             t = open('questionGenerators/input.txt', 'w')
             t.write(text.decode('utf8'))

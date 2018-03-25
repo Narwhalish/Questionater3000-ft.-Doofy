@@ -1,7 +1,19 @@
-World War II (often abbreviated to WWII or WW2), also known as the Second World War, was a global war that lasted from 1939 to 1945, although related conflicts began earlier.
-It involved the vast majority of the world's countries—including all of the great powers—eventually forming two opposing military alliances: the Allies and the Axis.
-It was the most widespread war in history, and directly involved more than 100 million people from over 30 countries.
-In a state of total war, the major participants threw their entire economic, industrial, and scientific capabilities behind the war effort, erasing the distinction between civilian and military resources.
-World War II was the deadliest conflict in human history, marked by 50 million to 85 million fatalities, most of which were civilians in the Soviet Union and China.
-It included massacres, the deliberate genocide of the Holocaust, strategic bombing, starvation, disease and the first use of nuclear weapons in history.
+Lines 73 – 78 demonstrate some statements new to you.
+This is a try–except structure, which is the Python exception handler.
+An exception handler lists the code to be executed if an error occurs.
+The PIL.Image.open(filename) function can cause an error that would halt the program if the filename does not specify an image file.
+Specifically, open()reports an IOError type of error.
+If that error is reported to the Python interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
+The traceback shows what lines of code caused the error.
+By using a try–except structure, such an error is caught instead of halting the program.
+An error that has been caught doesn’t get reported  back to the Python interpreter.
+The handler can opt to keep the error invisible to the user and keep the program running.
+That’s a good thing if the programmer expected the error and wants the program to keep running.
+That can be a bad thing if the code accidentally catches other exceptions, like the user trying to quit the program.
+So the program should only catch the specific class of errors that are expected, such as IOError in this case.
+Here is how the try–except structure controls the program flow.
+The statements in the try block are executed one at a time.
+If one of those statements causes an error, the interpreter checks to see if the type of error matches the type of errors listed in the except statement.
+If the error type matches the except statement, then the interpreter does not execute the rest of the try block and instead continues execution with the except block of code.
+If the error doesn’t match the except statement, then the error is not caught and the program will be halted.
 HTTP/1..
