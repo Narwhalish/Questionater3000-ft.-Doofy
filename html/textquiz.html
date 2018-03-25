@@ -69,7 +69,7 @@
       <div class="form-group"></div>
     </div>
     <div class="container">
-      <form action="../js/getanswers.js" id="answerForm" class="pure-form pure-form-stacked" method="post">
+      <form id="answerForm" class="pure-form pure-form-stacked" method="post">
         <div class="row">
           <form method="post" role="form">
             <div class="form-row">
@@ -155,7 +155,7 @@
               </select>
             </div>
             <div class="form-row mx-auto">
-              <button class="btn btn-primary btn-modify mx-auto" onclick="revealAnswers()">Check Answers</button>
+              <button class="btn btn-primary btn-modify mx-auto" onclick="revealAns()">Check Answers</button>
             </div>
           </form>
         </div>
@@ -172,6 +172,9 @@
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script>
+      function revealAns() {
+        $(".answer").css("color", "black");
+      };
       $.get('../questionGenerators/fill_out.txt', function(data) {
         var info = data.split('\n');
         for (i=0; i<info.length;i++){
@@ -203,8 +206,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="../js/clean-blog.min.js"></script>
-    <script src="../js/getanswers.js"></script>
-
   </body>
 
 </html>
