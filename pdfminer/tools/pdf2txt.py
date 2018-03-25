@@ -82,7 +82,7 @@ def translate(output, args):
 
 if __name__ == '__main__':
     translate('captain.txt', 'pdfminer/tools/samples/1-Demo.pdf')
-    f = open('captain.txt', 'r')
+    f = open('cse2.txt', 'r')
     contents = f.readlines()
     f.close()
     new = ''
@@ -113,6 +113,6 @@ if __name__ == '__main__':
         if (n[-2] != "?"):
             n = n.strip(" ")
             contents += n + '\n'
-    t = open('captain-out.txt', 'w')
+    t = open('cse2-out.txt', 'w')
     t.write(contents)
     t.close()
