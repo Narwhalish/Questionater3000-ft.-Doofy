@@ -1,10 +1,10 @@
-The statements in the try block are executed one at a __________________.
-time
-Execution continues after the try–except __________________.
-structure
-The handler can opt to keep the error invisible to the user and keep the __________________ running.
-program
+Execution continues after the __________________ structure.
+try–except
+An exception __________________ lists the code to be executed if an error occurs.
+handler
 Specifically, open()reports an __________________ type of error.
 IOError
-If the error type matches the except statement, then the interpreter does not execute the rest of the try block and instead continues execution with the except block of __________________.
-code
+By using a try–except __________________, such an error is caught instead of halting the program.
+structure
+So the program should only catch the specific class of errors that are expected, such as __________________ in this case.
+IOError

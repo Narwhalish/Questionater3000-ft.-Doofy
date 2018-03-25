@@ -1,10 +1,10 @@
-If the error doesn’t match the except statement, then the error is not caught and the program will be halted.
+So the except block catches the error but doesn’t do anything with it.
 True. 
-It is used when Python syntax requires a statement but no action is required.
+So the program should only catch the specific class of errors that are expected, such as IOError in this case.
 True. 
 If that error is reported to the Python interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
 True. 
-That’s a good thing if the programmer expected the error and wants the program to keep running.
+In this code the except block only contains the Python pass statement, which does nothing.
 True. 
-If the error type matches the except statement, then the interpreter does execute the rest of the try block and instead continues execution with the except block of code.
-False. If the error type matches the except statement, then the interpreter does not execute the rest of the try block and instead continues execution with the except block of code.
+If the try block of code is executed without any errors, the except block of code is skipped.
+True. 
