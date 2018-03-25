@@ -1,10 +1,10 @@
-If the error type matches the except statement, then the interpreter does not execute the rest of the try block and instead continues execution with the except block of code.
+The ship is safe and sound, its voyage closed and done.
 True. 
-By using a try–except structure, such an error is not caught instead of halting the program.
-False. By using a try–except structure, such an error is caught instead of halting the program.
-The statements in the try block are executed one at a time.
+My father does not feel my arm; he has no pulse nor will.
 True. 
-So the program should only catch the specific class of errors that are expected, such as IOError in this case.
+But I, without silent tread, walk the spot my captain lies, fallen cold and dead.
+False. But I, with silent tread, walk the spot my captain lies, fallen cold and dead.
+It is some dream that on the deck, you�ve fallen cold and dead.
 True. 
-That’s a good thing if the programmer expected the error and wants the program to keep running.
-True. 
+Our fearful trip is not done.
+False. Our fearful trip is done.

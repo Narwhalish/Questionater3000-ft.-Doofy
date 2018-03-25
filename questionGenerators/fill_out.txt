@@ -1,10 +1,10 @@
-So the program should only catch the specific class of errors that are expected, such as __________________ in this case.
-IOError
-This is a try–except structure, which is the __________________ exception handler.
-Python
-Specifically, open()reports an __________________ type of error.
-IOError
-Here is how the try–except structure controls the program __________________.
-flow
-The traceback shows what lines of __________________ caused the error.
-code
+It is some __________________ that on the deck, you�ve fallen cold and dead.
+dream
+__________________ father.
+Dear
+The __________________ has weathered every rack, the prize we sought is won.
+ship
+My __________________.
+Captain
+For you they call, the swaying mass, their eager faces __________________.
+turning

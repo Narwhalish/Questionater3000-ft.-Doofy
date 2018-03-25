@@ -15,7 +15,7 @@ q.write(contentstring)
 q.close()
 f = open('questionGenerators/input.txt', 'r')
 contents = f.readlines()
-    
+
 f.close()
 new = ''
 i = 0
@@ -27,22 +27,22 @@ for line in contents:
             lastchar=line[num]
             if lastchar != "\n" and lastchar != " ":
                 break
-                
+
         if (contents[i+1].strip("\n") == "" and lastchar != "." and lastchar != "!"):
             blank = True
-            
+
     if (not blank):
         if (lastchar == "."  or lastchar == "!"):
             new += line
         elif (len(line) > 10):
-            new += line                    
+            new += line
     i+=1
 new = new.replace('\n', ' ')
 new = new[:-1];
 new = [e+'.' for e in re.split("!\s|\.\s", new) if e]
 contents = ''
 for n in new:
-    if (n[-2] != "?"):
+    if (n[-2] != "?" and n != new[-1]):
         n = n.strip(" ")
         contents += n + '\n'
 t = open('questionGenerators/input.txt', 'w')
