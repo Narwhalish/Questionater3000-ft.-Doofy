@@ -75,36 +75,42 @@
             <div class="form-row">
               <div class="form-group col-8">
                 <p id='fill1' class='question'></p>
+                <p id='afill1' class='answer'></p>
               </div>
               <div class="form-group col-4">
                 <input type="text" id="ans1" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
                 <p id='fill2' class='question'></p>
+                <p id='afill2' class='answer'></p>
               </div>
               <div class="form-group col-4">
                 <input type="text" id="ans2" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
                 <p id='fill3' class='question'></p>
+                <p id='afill3' class='answer'></p>
               </div>
               <div class="form-group col-4">
                 <input type="text" id="ans3" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
                 <p id='fill4' class='question'></p>
+                <p id='afill4' class='answer'></p>
               </div>
               <div class="form-group col-4">
                 <input type="text" id="ans4" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
                 <p id='fill5' class='question'></p>
+                <p id='afill5' class='answer'></p>
               </div>
               <div class="form-group col-4">
                 <input type="text" id="ans5" class="form-control" placeholder="Answer">
               </div>
               <div class="form-group col-8">
                 <p id='tf1' class='question'></p>
+                <p id='atf1' class='answer'></p>
               </div>
               <select name="true-false-menus" id="true-false" class="form-group col-4">
                 <option selected>Pick True/False</option>
@@ -113,6 +119,7 @@
               </select>
               <div class="form-group col-8">
                 <p id='tf2' class='question'></p>
+                <p id='atf2' class='answer'></p>
               </div>
               <select name="true-false-menus" id="true-false" class="form-group col-4">
                 <option selected>Pick True/False</option>
@@ -121,6 +128,7 @@
               </select>
               <div class="form-group col-8">
                 <p id='tf3' class='question'></p>
+                <p id='atf3' class='answer'></p>
               </div>
               <select name="true-false-menus" id="true-false" class="form-group col-4">
                 <option selected>Pick True/False</option>
@@ -129,6 +137,7 @@
               </select>
               <div class="form-group col-8">
                 <p id='tf4' class='question'></p>
+                <p id='atf4' class='answer'></p>
               </div>
               <select name="true-false-menus" id="true-false" class="form-group col-4">
                 <option selected>Pick True/False</option>
@@ -137,6 +146,7 @@
               </select>
               <div class="form-group col-8">
                 <p id='tf5' class='question'></p>
+                <p id='atf5' class='answer'></p>
               </div>
               <select name="true-false-menus" id="true-false" class="form-group col-4">
                 <option selected>Pick True/False</option>
@@ -145,7 +155,7 @@
               </select>
             </div>
             <div class="form-row mx-auto">
-              <button class="btn btn-primary btn-modify mx-auto" onclick="storeAnswers()">Check Answers</button>
+              <button class="btn btn-primary btn-modify mx-auto" onclick="revealAnswers()">Check Answers</button>
             </div>
           </form>
         </div>
@@ -169,13 +179,21 @@
             var id = 'fill' + (i/2+1).toString();
             document.getElementById(id).innerHTML = info[i];
           }
+          else {
+            var id = 'afill' + ((i-1)/2+1).toString();
+            document.getElementById(id).innerHTML = info[i];
+          }
         }
       });
       $.get('../questionGenerators/tf_out.txt', function(data) {
         var info = data.split('\n');
         for (i=0; i<info.length;i++){
-          if (i%3==0) {
-            var id = 'tf' + (i/3+1).toString();
+          if (i%2==0) {
+            var id = 'tf' + (i/2+1).toString();
+            document.getElementById(id).innerHTML = info[i];
+          }
+          else {
+            var id = 'atf' + ((i-1)/2+1).toString();
             document.getElementById(id).innerHTML = info[i];
           }
         }

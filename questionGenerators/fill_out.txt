@@ -1,10 +1,10 @@
-In this code the except block only contains the __________________ pass statement, which does nothing.
-Python
-The __________________(filename) function can cause an error that would halt the program if the filename does not specify an image file.
-PIL.Image.open
-If the try block of __________________ is executed without any errors, the except block of __________________ is skipped.
+The statements in the try block are executed one at a __________________.
+time
+Execution continues after the try–except __________________.
+structure
+The handler can opt to keep the error invisible to the user and keep the __________________ running.
+program
+Specifically, open()reports an __________________ type of error.
+IOError
+If the error type matches the except statement, then the interpreter does not execute the rest of the try block and instead continues execution with the except block of __________________.
 code
-An exception handler lists the __________________ to be executed if an error occurs.
-code
-That’s a good thing if the __________________ expected the error and wants the program to keep running.
-programmer

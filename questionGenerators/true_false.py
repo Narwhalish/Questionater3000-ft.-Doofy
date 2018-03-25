@@ -103,5 +103,5 @@ else:
     
 t = open('questionGenerators/tf_out.txt', 'w')
 for item in final:
-    t.write(item[0] + '\n' + str(item[1]) + '\n' + item[2] + '\n')
+    t.write(item[0] + '\n' + str(item[1]) + '. ' + item[2] + '\n')
 t.close() 
