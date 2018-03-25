@@ -64,47 +64,92 @@
     </header>
 
     <!-- Main Content -->
+    <div class="container mx-auto" style="text-align: center;">
+      <div class="col-12">Answer these questions and compare your answers!</div>
+      <div class="form-group"></div>
+    </div>
     <div class="container">
-      <div class="row">
-        <form class="mx-auto pure-form pure-form-stacked" action="../js/getanswers.js" method="post">
-          <div class="form-row">
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-              Sample text for question 1.
+      <form action="../js/getanswers.js" id="answerForm" class="pure-form pure-form-stacked" method="post">
+        <div class="row">
+          <form method="post" role="form">
+            <div class="form-row">
+              <div class="form-group col-8">
+                Sample text for question 1.
+              </div>
+              <div class="form-group col-4">
+                <input type="text" id="ans1" class="form-control" placeholder="Answer">
+              </div>
+              <div class="form-group col-8">
+                Sample text for question 2.
+              </div>
+              <div class="form-group col-4">
+                <input type="text" id="ans2" class="form-control" placeholder="Answer">
+              </div>
+              <div class="form-group col-8">
+                Sample text for question 3.
+              </div>
+              <div class="form-group col-4">
+                <input type="text" id="ans3" class="form-control" placeholder="Answer">
+              </div>
+              <div class="form-group col-8">
+                Sample text for question 4.
+              </div>
+              <div class="form-group col-4">
+                <input type="text" id="ans4" class="form-control" placeholder="Answer">
+              </div>
+              <div class="form-group col-8">
+                Sample text for question 5.
+              </div>
+              <div class="form-group col-4">
+                <input type="text" id="ans5" class="form-control" placeholder="Answer">
+              </div>
+              <div class="form-group col-8">
+                Sample text for true/false 1.
+              </div>
+              <select name="true-false-menus" id="true-false" class="form-group col-4">
+                <option selected>Pick True/False</option>
+                <option value="True">True</option>
+                <option value="False">False</option>
+              </select>
+              <div class="form-group col-8">
+                Sample text for true/false 2.
+              </div>
+              <select name="true-false-menus" id="true-false" class="form-group col-4">
+                <option selected>Pick True/False</option>
+                <option value="True">True</option>
+                <option value="False">False</option>
+              </select>
+              <div class="form-group col-8">
+                Sample text for true/false 3.
+              </div>
+              <select name="true-false-menus" id="true-false" class="form-group col-4">
+                <option selected>Pick True/False</option>
+                <option value="True">True</option>
+                <option value="False">False</option>
+              </select>
+              <div class="form-group col-8">
+                Sample text for true/false 4.
+              </div>
+              <select name="true-false-menus" id="true-false" class="form-group col-4">
+                <option selected>Pick True/False</option>
+                <option value="True">True</option>
+                <option value="False">False</option>
+              </select>
+              <div class="form-group col-8">
+                Sample text for true/false 5.
+              </div>
+              <select name="true-false-menus" id="true-false" class="form-group col-4">
+                <option selected>Pick True/False</option>
+                <option value="True">True</option>
+                <option value="False">False</option>
+              </select>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-              <input type="text" id="ans1" class="form-control" placeholder="Answer">
+            <div class="form-row mx-auto">
+              <button class="btn btn-primary btn-modify mx-auto" onclick="storeAnswers()">Check Answers</button>
             </div>
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-              Sample text for question 2.
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-              <input type="text" id="ans2" class="form-control" placeholder="Answer">
-            </div>
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-              Sample text for question 3.
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-              <input type="text" id="ans3" class="form-control" placeholder="Answer">
-            </div>
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-              Sample text for question 4.
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-              <input type="text" id="ans4" class="form-control" placeholder="Answer">
-            </div>
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-              Sample text for question 5.
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-              <input type="text" id="ans5" class="form-control" placeholder="Answer">
-            </div>
-          </div>
-          <br>
-          <div class="form-row">
-            <button class="btn btn-primary btn-modify mx-auto" onclick="jeff()">Check Answers</button>
-          </div>
-        </form>
-      </div>
+          </form>
+        </div>
+      </form>
     </div>
 
     <hr>
