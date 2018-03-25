@@ -122,15 +122,9 @@ img::-moz-selection {
     padding: 10px 20px;
     color: #fff
   }
-  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, .8)
-  }
   #mainNav .navbar-nav>li.nav-item>a {
     padding: 10px 20px;
     color: #fff
-  }
-  #mainNav .navbar-nav>li.nav-item>a:focus, #mainNav .navbar-nav>li.nav-item>a:hover {
-    color: rgba(255, 255, 255, .8)
   }
   #mainNav {
     -webkit-transition: background-color .2s;
@@ -143,34 +137,6 @@ img::-moz-selection {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden
     /* min-width: 992px; */
-  }
-  #mainNav.is-fixed {
-    position: fixed;
-    top: -67px;
-    -webkit-transition: -webkit-transform .2s;
-    -moz-transition: -moz-transform .2s;
-    transition: transform .2s;
-    border-bottom: 1px solid #fff;
-    background-color: rgba(255, 255, 255, .9)
-  }
-  #mainNav.is-fixed .navbar-brand {
-    color: #212529
-  }
-  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085a1
-  }
-  #mainNav.is-fixed .navbar-nav>li.nav-item>a {
-    color: #212529
-  }
-  #mainNav.is-fixed .navbar-nav>li.nav-item>a:focus, #mainNav.is-fixed .navbar-nav>li.nav-item>a:hover {
-    color: #0085a1
-  }
-  #mainNav.is-visible {
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0)
   }
 /* } */
 
