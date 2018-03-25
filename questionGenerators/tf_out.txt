@@ -1,10 +1,10 @@
-So the except block catches the error but doesn’t do anything with it.
+This is a try–except structure, which is the Python exception handler.
 True. 
 So the program should only catch the specific class of errors that are expected, such as IOError in this case.
 True. 
-If that error is reported to the Python interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
-True. 
+Lines 73 – 78 demonstrate all statements new to you.
+False. Lines 73 – 78 demonstrate some statements new to you.
+If that error is not reported to the Python interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
+False. If that error is reported to the Python interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
 In this code the except block only contains the Python pass statement, which does nothing.
-True. 
-If the try block of code is executed without any errors, the except block of code is skipped.
 True. 

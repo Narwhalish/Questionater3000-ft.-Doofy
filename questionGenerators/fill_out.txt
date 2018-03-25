@@ -1,10 +1,10 @@
-Execution continues after the __________________ structure.
-try–except
-An exception __________________ lists the code to be executed if an error occurs.
-handler
-Specifically, open()reports an __________________ type of error.
-IOError
-By using a try–except __________________, such an error is caught instead of halting the program.
-structure
+Lines 73 – 78 __________________ some statements new to you.
+demonstrate
+If that error is reported to the __________________ interpreter, the program is halted and the error is printed in the traceback ( list of function calls that were made before an exception stopped the program) at the interpreter prompt.
+Python
 So the program should only catch the specific class of errors that are expected, such as __________________ in this case.
 IOError
+In this code the except block only contains the __________________ pass statement, which does nothing.
+Python
+If the try __________________ of code is executed without any errors, the except __________________ of code is skipped.
+block
